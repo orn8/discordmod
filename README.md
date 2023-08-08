@@ -1,4 +1,4 @@
-# Experments
+# [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Experiments)](https://git.io/typing-svg)
 
 Enable experiments within the Discord app.
 
