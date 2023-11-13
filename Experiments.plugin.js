@@ -3,30 +3,33 @@
  * @author oragne
  * @authorId 1101637133850132572
  * @description Enables access to experiments and staff-only options for normal users.
- * @version 1.1.6
+ * @version 1.2.0
  * @source https://github.com/choco705/Experiments-BetterDiscord
  * @updateUrl https://raw.githubusercontent.com/choco705/Experiments-BetterDiscord/main/Experiments.plugin.js
  */
 
-let wpRequire
-
-module.exports = class Experiments {
-    load() {}
-
-    start = () => {
-        
-        window.webpackChunkdiscord_app.push([[ Math.random() ], {}, (req) => { wpRequire = req; }]);
-        let mod = Object.values(wpRequire.c).find(x => typeof x?.exports?.Z?.isDeveloper !== "undefined");
-        let usermod = Object.values(wpRequire.c).find(x => x?.exports?.default?.getUsers)
-        let nodes = Object.values(mod.exports.Z._dispatcher._actionHandlers._dependencyGraph.nodes)
-        try {
-            nodes.find(x => x.name == "ExperimentStore").actionHandler["OVERLAY_INITIALIZE"]({user: {flags: 1}})
-        } catch (e) {}
-        let oldGetUser = usermod.exports.default.__proto__.getCurrentUser;
-        usermod.exports.default.__proto__.getCurrentUser = () => ({isStaff: () => true})
-        nodes.find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]()
-        usermod.exports.default.__proto__.getCurrentUser = oldGetUser
+module.exports = class discordExperiments {
+  start() {
+    try {
+      let c = window.webpackChunkdiscord_app.push([[Symbol()],{},({c})=>Object.values(c)]);
+      let u = c.find((x)=> x?.exports?.default?.getUsers).exports.default;
+      let m = Object.values(u._dispatcher._actionHandlers._dependencyGraph.nodes);
+      u.getCurrentUser().flags |= 1;
+      m.find((x)=>x.name === "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]();
+      try {m.find((x)=>x.name === "ExperimentStore").actionHandler["OVERLAY_INITIALIZE"]({user:{flags: 1}})} catch {}
+      m.find((x)=>x.name === "ExperimentStore").storeDidChange()
+    } catch (err) {
+      console.log(err);
     }
+  }
 
-    stop = () => {}
+  stop() {
+    BdApi.showNotice("You must reboot Discord when disabling Experiments.", {
+      type: "warning",
+      buttons: [{
+        label: "Reboot Discord",
+        onClick: () => location.reload()
+      }]
+    });
+  }
 }
