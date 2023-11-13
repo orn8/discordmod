@@ -10,6 +10,7 @@
 
 module.exports = class discordExperiments {
   start() {
+    BdApi.showToast("Experiments v1.2.1 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
     try {
       let c = window.webpackChunkdiscord_app.push([[Symbol()],{},({c})=>Object.values(c)]);
       let u = c.find((x)=> x?.exports?.default?.getUsers).exports.default;
@@ -21,7 +22,7 @@ module.exports = class discordExperiments {
     } catch (err) {
       console.log(err);
       BdApi.showNotice(
-        `Experiments Error: ${err}`,
+        "Experiments Error: ${err}",
         {
           type: "error",
           buttons: [
