@@ -3,7 +3,7 @@
  * @author oragne
  * @authorId 1101637133850132572
  * @description Enables access to experiments and staff-only options for normal users.
- * @version 1.2.0
+ * @version 1.2.1
  * @source https://github.com/choco705/Experiments-BetterDiscord
  * @updateUrl https://raw.githubusercontent.com/choco705/Experiments-BetterDiscord/main/Experiments.plugin.js
  */
@@ -20,6 +20,18 @@ module.exports = class discordExperiments {
       m.find((x)=>x.name === "ExperimentStore").storeDidChange()
     } catch (err) {
       console.log(err);
+      BdApi.showNotice(
+        `Experiments Error: ${err}`,
+        {
+          type: "error",
+          buttons: [
+            {
+              label: "Report",
+              onClick: () => window.open("https://github.com/choco705/Experiments-BetterDiscord/issues", "mozillaTab")
+            }
+          ]
+        }
+      );
     }
   }
 
