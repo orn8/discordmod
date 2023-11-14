@@ -22,7 +22,7 @@ module.exports = class discordExperiments {
     } catch (err) {
       console.log(err);
       BdApi.showNotice(
-        `Experiments Error:` ${err},
+        `Experiments Error: ${err}`,
         {
           type: "error",
           buttons: [
