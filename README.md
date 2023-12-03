@@ -18,3 +18,7 @@ Download and put the `Experiments.plugin.js` file into the the BetterDiscord plu
 2) Restart Discord.
 
 #### And voilá! You're done!
+
+---
+
+> All code is from Megumin's [GitHub Gist](https://gist.github.com/MeguminSama/2cae24c9e4c335c661fa94e72235d4c4).
