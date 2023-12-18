@@ -10,7 +10,7 @@
 
 module.exports = class discordExperiments {
   start() {
-    BdApi.showToast("Experiments v1.2.3 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
+    BdApi.showToast("Experiments v1.2.4 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
     try {
       // START
       let cache; webpackChunkdiscord_app.push([["wp_isdev_patch"], {}, r => cache=r.c]);
