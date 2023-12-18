@@ -16,7 +16,7 @@ Download and put `[something].plugin.js` file into the the BetterDiscord plugins
 
 2) Restart Discord.
 
-#### And voilá! You're done!
+#### And voilà! You're done!
 
 </br>
 
