@@ -1,13 +1,13 @@
 
-# ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Experiments)
+# ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=oragne's%20BetterDiscord%20Stuff)
 
-Enable experiments within the Discord app.
+A collection of my BetterDiscord Plugins and Themes.
 
-![Experiments](https://i.imgur.com/JC0vYOj.png)
+---
 
 ## Installation
 
-Download and put the `Experiments.plugin.js` file into the the BetterDiscord plugins folder.
+Download and put the `[something].plugin.js` file into the the BetterDiscord plugins folder.
 
 ## Usage
 
@@ -19,6 +19,10 @@ Download and put the `Experiments.plugin.js` file into the the BetterDiscord plu
 
 #### And voilá! You're done!
 
----
+</br>
 
-> All code is from Megumin's [GitHub Gist](https://gist.github.com/MeguminSama/2cae24c9e4c335c661fa94e72235d4c4).
+# Plugins
+
+Name | Description | Version
+---|---|---
+**Experiments** | Enables access to experiments and staff-only options for normal users. | `1.2.3`
