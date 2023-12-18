@@ -7,7 +7,7 @@ A collection of my BetterDiscord Plugins and Themes.
 
 ## Installation
 
-Download and put the `[something].plugin.js` file into the the BetterDiscord plugins folder.
+Download and put `[something].plugin.js` file into the the BetterDiscord plugins folder.
 
 ## Usage
 
