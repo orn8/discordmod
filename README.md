@@ -1,5 +1,4 @@
-
-# ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=oragne's%20BetterDiscord%20Stuff)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Mono&pause=2000&color=FC6A04&random=false&width=435&lines=oragne's+BetterDiscord+Stuff)](https://git.io/typing-svg)
 
 A collection of my BetterDiscord Plugins and Themes.
 
