@@ -22,9 +22,13 @@ Download and put `[something].plugin.js` file into the the BetterDiscord plugins
 
 # Plugins
 
-✅ - Working </br>
-❌ - Not Working </br>
-🚧 - Somewhat working </br>
+</br>
+
+`✅ - Working` </br>
+`❌ - Not Working` </br>
+`🚧 - Somewhat working` </br>
+
+</br>
 
 Name | Description | Version | Status
 ---|---|---|---
