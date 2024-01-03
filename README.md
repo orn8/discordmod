@@ -32,4 +32,4 @@ Download and put `[something].plugin.js` file into the the BetterDiscord plugins
 
 Name | Description | Version | Status
 ---|---|---|---
-**[Experiments](https://raw.githubusercontent.com/orn8/Experiments-BetterDiscord/main/Plugins/Experiments.plugin.js)** | Enables access to experiments and staff-only options for normal users. | `1.2.3` | ✅
+**[Experiments](https://raw.githubusercontent.com/orn8/Experiments-BetterDiscord/main/Plugins/Experiments.plugin.js)** | Enables access to experiments and staff-only options for normal users. | `1.2.5` | ✅

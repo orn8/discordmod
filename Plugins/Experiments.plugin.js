@@ -3,14 +3,14 @@
  * @author oragne
  * @authorId 1101637133850132572
  * @description Enables access to experiments and staff-only options for normal users.
- * @version 1.2.4
+ * @version 1.2.5
  * @source https://github.com/orn8/BetterDiscord
- * @updateUrl https://raw.githubusercontent.com/orn8/Experiments-BetterDiscord/main/Plugins/Experiments.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/orn8/BetterDiscord/main/Plugins/Experiments.plugin.js
  */
 
 module.exports = class discordExperiments {
   start() {
-    BdApi.showToast("Experiments v1.2.4 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
+    BdApi.showToast("Experiments v1.2.5 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
     try {
       // START
       let cache; webpackChunkdiscord_app.push([["wp_isdev_patch"], {}, r => cache=r.c]);
