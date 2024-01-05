@@ -5,7 +5,7 @@
  * @description Enables access to experiments and staff-only options for normal users.
  * @version 1.2.5
  * @source https://github.com/orn8/BetterDiscord
- * @updateUrl https://raw.githubusercontent.com/orn8/BetterDiscord/main/Plugins/Experiments.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/orn8/DiscordMod/main/Plugins/Experiments.plugin.js
  */
 
 module.exports = class discordExperiments {
