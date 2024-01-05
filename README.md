@@ -4,8 +4,6 @@ My collection of plugins, themes, and tools for Discord client mods.
 
 ---
 
-</br>
-
 # Plugins
 
 </br>
