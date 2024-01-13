@@ -16,4 +16,4 @@ My collection of plugins, themes, and tools for Discord client mods.
 
 Name | Description | Version | Platform | Status
 ---|---|---|---|---
-**[Experiments](https://raw.githubusercontent.com/orn8/discordmod/main/Plugins/Experiments.plugin.js)** | Enables access to experiments and staff-only options for normal users. | `1.2.5` | BetterDiscord | ✅
+**[Experiments](https://raw.githubusercontent.com/orn8/discordmod/main/BetterDiscord/Plugins/Experiments.plugin.js)** | Enables access to experiments and staff-only options for normal users. | `1.2.5` | BetterDiscord | ✅
