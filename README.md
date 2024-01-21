@@ -2,6 +2,9 @@
 
 My collection of plugins, themes, and tools for Discord client mods.
 
+> Please note that I don't have multiple Discord instances with different client mods. </br>
+> This also means that the userbase will have to report an [issue](https://github.com/orn8/discordmod/issues) to the repo if a plugin is broken.
+
 ---
 
 # Plugins
@@ -16,4 +19,4 @@ My collection of plugins, themes, and tools for Discord client mods.
 
 Name | Description | Version | Platform | Status
 ---|---|---|---|---
-**[Experiments](https://raw.githubusercontent.com/orn8/discordmod/main/BetterDiscord/Plugins/Experiments.plugin.js)** | Enables access to experiments and staff-only options for normal users. | `1.2.5` | BetterDiscord | ✅
+**[Experiments](https://raw.githubusercontent.com/orn8/discordmod/main/betterdiscord-plugins/experiments.plugin.js)** | Enables access to experiments and staff-only options for normal users. | `1.2.5` | BetterDiscord | ✅
