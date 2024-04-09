@@ -9,13 +9,13 @@ My collection of plugins, themes, and tools for Discord client mods.
 
 # Plugins
 
-</br>
+<br/>
 
-`✅ - Working` </br>
-`❌ - Not Working` </br>
-`🚧 - Somewhat working` </br>
+`✅ - Working` <br/>
+`❌ - Not Working` <br/>
+`🚧 - Somewhat working` <br/>
 
-</br>
+<br/>
 
 Name | Description | Version | Platform | Status
 ---|---|---|---|---
