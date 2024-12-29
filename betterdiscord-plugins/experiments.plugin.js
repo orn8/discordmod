@@ -4,7 +4,7 @@
  * @authorId 1101637133850132572
  * @description Enables access to experiments and staff-only options for normal users.
  * @version 1.2.5
- * @source https://github.com/orn8/BetterDiscord
+ * @source https://github.com/orn8/discordmod
  * @updateUrl https://raw.githubusercontent.com/orn8/discordmod/main/betterdiscord-plugins/experiments.plugin.js
  */
 
@@ -32,7 +32,7 @@ module.exports = class discordExperiments {
           buttons: [
             {
               label: "Report",
-              onClick: () => window.open("https://github.com/orn8/BetterDiscord/issues", "mozillaTab")
+              onClick: () => window.open("https://github.com/orn8/discordmod/issues", "mozillaTab")
             }
           ]
         }
