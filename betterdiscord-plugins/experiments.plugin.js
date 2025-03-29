@@ -3,25 +3,21 @@
  * @author oragne
  * @authorId 1101637133850132572
  * @description Enables access to experiments and staff-only options for normal users.
- * @version 1.2.5
+ * @version 1.2.6
  * @source https://github.com/orn8/discordmod
  * @updateUrl https://raw.githubusercontent.com/orn8/discordmod/main/betterdiscord-plugins/experiments.plugin.js
  */
 
 module.exports = class discordExperiments {
   start() {
-    BdApi.showToast("Experiments v1.2.5 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
+    BdApi.showToast("Experiments v1.2.6 Active", {type:"info",icon: true,timeout: 5000,forceShow: true});
     try {
       // START
-      let cache; webpackChunkdiscord_app.push([["wp_isdev_patch"], {}, r => cache=r.c]);
-      var UserStore = Object.values(cache).find(m => m?.exports?.default?.getUsers).exports.default;
-      var actions = Object.values(UserStore._dispatcher._actionHandlers._dependencyGraph.nodes);
-      var user = UserStore.getCurrentUser();
-      actions.find(n => n.name === "ExperimentStore").actionHandler.CONNECTION_OPEN({
-      	type: "CONNECTION_OPEN", user: {flags: user.flags |= 1}, experiments: [],
-      });
-      actions.find(n => n.name === "DeveloperExperimentStore").actionHandler.CONNECTION_OPEN();
-      webpackChunkdiscord_app.pop(); user.flags &= ~1; "done";
+      CurrentUser.flags |= 1;
+      const Stores = Object.values(UserStore._dispatcher._actionHandlers._dependencyGraph.nodes);
+      Stores.find((x) => x.name === "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]();
+      try { Stores.find((x) => x.name === "ExperimentStore").actionHandler["OVERLAY_INITIALIZE"]({ user: { flags: 1 } }); } catch {}
+      Stores.find((x) => x.name === "ExperimentStore").storeDidChange(); 
       // END
     } catch (err) {
       console.log(err);
