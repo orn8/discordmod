@@ -44,7 +44,7 @@ module.exports = class discordExperiments {
         isStaff: () => true
       });
 
-      // Trigger developer experiment initialization
+      // Trigger developer experiment initialisation
       dispatcherNodes.find((x) => x.name === "DeveloperExperimentStore")
         ?.actionHandler?.["OVERLAY_INITIALIZE"]?.();
 
